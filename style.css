@@ -1,92 +1,84 @@
-/* Center everything on the page */
 body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 
-    /* Background image */
-    background-image: url(https://toppng.com/uploads/preview/road-man-run-asphalt-jog-11569972622q56jeco317.jpg); /* replace with your image file */
-    background-size: cover;       /* cover entire screen */
-    background-position: center;  /* center the image */
-    background-repeat: no-repeat; /* don’t tile */
+    background-image: url(https://toppng.com/uploads/preview/road-man-run-asphalt-jog-11569972622q56jeco317.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-/* Card style */
 .converter-card {
-    background-color: rgba(255, 255, 255, 0.5); /* 50% opacity */
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(6px);
     padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     text-align: center;
-    width: 90%; max-width: 400px;
-    backdrop-filter: blur(5px);
+    width: 90%;
+    max-width: 420px;
 }
 
-/* Heading */
 h1 {
-    font-size: 22px;
-    margin-bottom: 30px;
-    color: #333;
+    color: #1f2a44;
+    margin-bottom: 25px;
 }
 
-/* Inputs */
-input[type="text"], input[type="number"] {
-    padding: 10px;
-    width: 80%;
+input[type="text"],
+input[type="number"],
+select {
+    padding: 12px;
+    width: 100%;
     margin: 10px 0;
     border-radius: 8px;
     border: 1px solid #ccc;
     font-size: 16px;
     box-sizing: border-box;
 }
-input:focus{
+
+input:focus,
+select:focus {
     outline: none;
-    border:2px solid #007BFF
+    border: 2px solid #d62828;
 }
 
 /* Button */
 button {
-    padding: 10px 25px;
+    padding: 12px 25px;
     font-size: 16px;
     border-radius: 8px;
     border: none;
-    background-color: #007BFF;
+    background-color: #d62828;
     color: white;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.5);
+    transition: all 0.25s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
+    background-color: #b71c1c;
+    transform: translateY(-2px);
 }
 
 /* Result */
 #result {
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
-    color: #150755;
-    
-    
+    color: #2a9d8f;
 }
 
-details{
-     padding: 5px 10px;
-    font-size: 13px;
-    border-radius: 2px;
-    border: none;
-    background-color:transparent;
-    color: rgb(14, 11, 11);
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+details {
+    margin-top: 20px;
+    font-size: 14px;
     text-align: left;
-
 }
-details summary{
+
+details summary {
     font-weight: bold;
+    color: #1f2a44;
     cursor: pointer;
 }
