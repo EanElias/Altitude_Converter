@@ -7,7 +7,7 @@ body {
     height: 100vh;
 
     /* Background image */
-    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/006/992/893/small/running-man-silhouette-in-sunset-time-silhouette-for-a-runner-training-in-the-evening-sunsets-photo.jpg); /* replace with your image file */
+    background-image: url(https://toppng.com/uploads/preview/road-man-run-asphalt-jog-11569972622q56jeco317.jpg); /* replace with your image file */
     background-size: cover;       /* cover entire screen */
     background-position: center;  /* center the image */
     background-repeat: no-repeat; /* don’t tile */
@@ -64,3 +64,4 @@ button:hover {
     font-weight: bold;
     color: #007BFF;
 }
+
